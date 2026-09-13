@@ -53,6 +53,10 @@ def get_linked_list_sum(linked_list_1, linked_list_2):
         cur2_num += num
         cur2 = cur2.next
 
+    # 답안
+    # while cur1 is not None:
+    #     cur1_sum = cur1_sum * 10 + cur1.data
+    #     cur1.next
 
     return (cur1_num + cur2_num)
 

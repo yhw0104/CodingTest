@@ -102,7 +102,6 @@ class Linked_List:
 
         prev_node.next = front_node
 
-        return cur
 
 
 # ["기관실"] -> ["시멘트"] -> ["자갈"] -> ["밀가루"] -> ["우편"]
@@ -120,5 +119,5 @@ node1.append("우편")
 
 # node1.add_node(0, "하연")
 
-node1.remove_node(0)
+node1.remove_node(2)
 node1.print_all()
