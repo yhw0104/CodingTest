@@ -2,8 +2,8 @@ finding_target = 7
 finding_numbers = [0, 3, 5, 6, 1, 2, 4]
 
 def is_exist_target_number_binary(target, array):
-    finding_numbers.sort()
-    index_max = len(finding_numbers) - 1
+    array.sort()
+    index_max = len(array) - 1
     index_min = 0
     index_half = (index_min + index_max) // 2
 
@@ -13,7 +13,7 @@ def is_exist_target_number_binary(target, array):
             return True
         elif target > array[index_half]:
             index_min = index_half + 1
-        elif target < index_half:
+        elif target < array[index_half]:
             index_max = index_half - 1
 
         index_half = (index_min + index_max) // 2
