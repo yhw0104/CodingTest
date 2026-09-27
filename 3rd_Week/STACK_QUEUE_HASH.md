@@ -247,11 +247,14 @@ class LinkedTuple:
 
 class LinkedDict:
     def __init__(self):
-        self.items = [LinkedTuple() for _ in range(8)]
+        self.items = []
+        for i in range(8):
+            self.items.append(LinkedTuple())   # 칸마다 빈 LinkedTuple
 
     def put(self, key, value):
         index = hash(key) % len(self.items)
         self.items[index].add(key, value)
+        return
 
     def get(self, key):
         index = hash(key) % len(self.items)
