@@ -31,6 +31,6 @@ class LinkedDict:
         return self.items[index].get(key)
 
 
-my_dict = Dict()
+my_dict = LinkedDict()
 my_dict.put("test", 3)
 print(my_dict.get("test"))  # 3이 반환되어야 합니다!
